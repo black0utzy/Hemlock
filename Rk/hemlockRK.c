@@ -12,7 +12,7 @@
 #define HIDE_DIR "Directory_name"     /* Your Directory name to hide */
 
 MODULE_LICENSE("GPL");        
-MODULE_AUTHOR("PedroRodriguesDEV-security");        
+MODULE_AUTHOR("PedroRodriguesDEV_security");        
 MODULE_DESCRIPTION("Hiding the backdoor"); 
 MODULE_VERSION("1.0");        
 
