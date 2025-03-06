@@ -8,8 +8,8 @@
 #include <linux/dirent.h>
 #include <linux/uaccess.h>
 
-#define PORT 9090              // Defines the port to be hidden 
-#define HIDE_DIR "Directory_name"     // Your Directory name to hide
+#define PORT 9090              /* Defines the port to be hidden */
+#define HIDE_DIR "Directory_name"     /* Your Directory name to hide */
 
 MODULE_LICENSE("GPL");        
 MODULE_AUTHOR("PedroRodriguesDEV-security");        
