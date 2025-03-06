@@ -1,4 +1,4 @@
-//THIS CODE IS RESTRICTED! DO NOT SHARE THE SOURCE CODE WITH ANYONE!
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
