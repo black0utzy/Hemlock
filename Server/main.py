@@ -3,9 +3,7 @@ import random
 import threading
 import socket
 import sys
-#Eu vou melhorar isso, e deixar o netcat só para receber a conexão da reverse shell, vou usar socket p se comunicar com o backdoor
 
-#cores
 vermelho = "\033[0;31m"
 roxo = "\033[0;35m"
 verde = "\033[0;32m"
@@ -24,8 +22,7 @@ def banners(text):
     except Exception as e:
         print(f"{vermelho}Erro: {e}{null}")
         return []
-    
-#Sistema p randomizar os banners
+
 def rndm(banners):
     if not banners:
         print(f"{vermelho}Nenhum banner encontrado!{null}")
